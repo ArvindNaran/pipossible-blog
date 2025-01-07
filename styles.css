@@ -16,6 +16,7 @@ a {
   color: inherit;
 }
 
+/* Header */
 header {
   background-color: #333;
   color: #fff;
@@ -43,6 +44,7 @@ nav ul li a {
   font-size: 1.1em;
 }
 
+/* Hero Section */
 .hero {
   background-color: #007acc;
   color: #fff;
@@ -68,6 +70,7 @@ nav ul li a {
   margin-top: 20px;
 }
 
+/* Featured Posts */
 .featured-posts {
   padding: 40px 20px;
 }
@@ -96,6 +99,45 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Blog Post Section */
+.blog-post {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.post-content h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #444;
+}
+
+.post-content ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.post-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Footer */
 footer {
   background-color: #333;
   color: #fff;
@@ -112,4 +154,8 @@ footer .social-links {
 
 footer .social-links li {
   margin: 0 10px;
+}
+
+footer .social-links li a {
+  color: #fff;
 }
