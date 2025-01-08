@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sustainability is a top priority for companies aiming to reduce operational costs, enhance energy efficiency, and minimize carbon emissions...">
+  <title>Introducing the Carbon Emissions Explorer Dashboard in VMware Aria Operations - PiPossible</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>PiPossible</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Blog Post Content -->
+  <main class="blog-post">
+  <article>
+    <header class="post-header">
+      <h1>Introducing the Carbon Emissions Explorer Dashboard in VMware Aria Operations</h1>
+      <p class="meta">By <strong>Santha Vignesh</strong> | Published: Dec 7, 2025</p>
+    </header>
+    <section class="post-content">
+      <p>Sustainability is a top priority for companies aiming to reduce operational costs, enhance energy efficiency, and minimize carbon emissions. Virtualization technologies, such as those offered by VMware, have been pivotal in reducing carbon emissions through server consolidation. However, to achieve net-zero emissions, businesses need detailed insights into the carbon footprint of their virtual IT infrastructure.</p>
+
+      <p>The new <strong>Carbon Emissions Explorer Dashboard</strong> in VMware Aria Operations complements existing sustainability dashboards and offers customers powerful tools to:</p>
+      <ul>
+        <li>Analyze carbon emissions across virtual infrastructure levels, from vCenter to individual virtual machines.</li>
+        <li>Identify and address outliers to reduce carbon footprint efficiently.</li>
+        <li>Discover opportunities for right-sizing clusters and virtual machines to optimize resource usage.</li>
+      </ul>
+
+      <img src="images/image-1.jpg" alt="Carbon Emissions Explorer Dashboard" style="max-width: 100%; height: auto;">
+
+      <h2>Key Features of the Carbon Emissions Explorer Dashboard</h2>
+      <p>The dashboard leverages built-in metrics, custom Super Metrics, and new widgets/views to provide insights into the IT infrastructure’s carbon footprint. Here’s what customers can explore:</p>
+      <ul>
+        <li>Trends in overall carbon emissions, helping track sustainability goals.</li>
+        <li>Near real-time carbon emissions by datacenters.</li>
+        <li>Weekly aggregated carbon emissions at vCenter, datacenter, cluster, host, and virtual machine levels.</li>
+        <li>Top 10 clusters with the highest and lowest power consumption.</li>
+        <li>Identification of oversized clusters and VMs that can be optimized to reduce carbon emissions.</li>
+      </ul>
+
+      <p>Custom Super Metrics calculate carbon emissions for objects using data such as power consumption and the <strong>EPA Greenhouse Gas Equivalencies Calculator</strong>. These metrics enable precise insights into carbon emissions for objects without built-in metrics.</p>
+
+      <h2>Dashboard Components</h2>
+      <h3>Super Metrics</h3>
+      <p>The dashboard uses the following Super Metrics:</p>
+      <img src="images/image-2.jpg" alt="Super Metrics Used in Dashboard" style="max-width: 100%; height: auto;">
+      <ul>
+        <li><strong>Carbon Emission Super Metric:</strong> Calculates total emissions for vCenter and virtual datacenters using power consumption data.</li>
+        <li><strong>Host Carbon Emission Super Metric:</strong> Computes carbon emissions for individual hosts.</li>
+        <li><strong>Oversized Clusters Super Metric:</strong> Identifies reclaimable hosts in oversized clusters.</li>
+        <li><strong>VM Carbon Emission Super Metric:</strong> Measures emissions for virtual machines based on energy usage on their host systems.</li>
+      </ul>
+
+      <h3>Views and Widgets</h3>
+      <p>The dashboard includes various views and widgets to visualize carbon emissions data. Key components include:</p>
+      <ul>
+        <li><strong>Carbon Datacenter View:</strong> Displays real-time datacenter carbon emissions.</li>
+        <li><strong>Sustainability / Total Carbon Emissions View:</strong> Shows historical and real-time trends in emissions across the environment.</li>
+        <li><strong>Weekly Carbon Cluster View:</strong> Provides weekly carbon emission summaries at the cluster level, including capacity and host count.</li>
+        <li><strong>Weekly Carbon Host View:</strong> Highlights emissions by individual hosts, along with their specifications.</li>
+        <li><strong>Weekly Carbon VM View:</strong> Displays emissions for individual VMs, flagging oversized instances for optimization.</li>
+      </ul>
+
+      <img src="images/image-3.jpg" alt="Dashboard Components" style="max-width: 100%; height: auto;">
+
+      <h2>Heatmap and Real-Time Insights</h2>
+      <p>The <strong>Oversized Clusters Heatmap</strong> uses color coding to identify opportunities for host reclamation:</p>
+      <ul>
+        <li>Green: No reclaimable hosts.</li>
+        <li>Yellow: One reclaimable host.</li>
+        <li>Red: Two or more reclaimable hosts.</li>
+      </ul>
+      <p>Customers can drill down to individual clusters, hosts, and VMs to analyze their carbon footprint and optimize resource usage.</p>
+      <img src="images/image-4.jpg" alt="Oversized Clusters Heatmap" style="max-width: 100%; height: auto;">
+      <img src="images/image-5.jpg" alt="Top Power Consuming Clusters" style="max-width: 100%; height: auto;">
+
+      <h3>Interactive Dashboards</h3>
+      <p>The interactive dashboards allow customers to:</p>
+      <ul>
+        <li>Drill down from vCenter to datacenter, cluster, and individual host levels.</li>
+        <li>View real-time and weekly carbon emissions data for clusters and VMs.</li>
+        <li>Analyze oversized clusters and VMs to identify optimization opportunities.</li>
+      </ul>
+      <img src="images/image-6.jpg" alt="Interactive Dashboard Example" style="max-width: 100%; height: auto;">
+
+      <h2>Conclusion</h2>
+      <p>The Carbon Emissions Explorer Dashboard in VMware Aria Operations is a game-changer for businesses aiming to reduce their IT infrastructure’s carbon footprint. By providing actionable insights and detailed metrics, this dashboard empowers companies to make data-driven decisions and achieve their sustainability goals. From tracking emissions trends to identifying optimization opportunities, the dashboard offers everything needed to move toward a greener future.</p>
+    </section>
+  </article>
+</main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Follow us on:</p>
+    <ul class="social-links">
+      <li><a href="https://x.com/possible_pi" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/pipossible" target="_blank">Instagram</a></li>
+      <li><a href="#" target="_blank">LinkedIn</a></li>
+    </ul>
+    <p>&copy; 2025 PiPossible - All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
