@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="With the April 2023 release of <strong>VMware Aria Operations</strong> (v8.12) for both SaaS and on-premises, significant improvements have...">
+  <title>Enhanced Metric-Based Search in VMware Aria Operations: A Comprehensive Guide - PiPossible</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>PiPossible</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Blog Post Content -->
+  <main class="blog-post">
+  <article>
+    <header class="post-header">
+      <h1>Enhanced Metric-Based Search in VMware Aria Operations: A Comprehensive Guide</h1>
+      <p class="meta">By <strong>Author Name</strong> | Published: January 7, 2025</p>
+    </header>
+    <section class="post-content">
+      <p>With the April 2023 release of <strong>VMware Aria Operations</strong> (v8.12) for both SaaS and on-premises, significant improvements have been made to the metric-based search functionality. Previously, this capability was primarily accessible through the visualization tools in Views. Now, metric-based search is available across all object types, including native objects, management pack objects, and custom objects in VMware Aria Operations.</p>
+
+      <h2>What’s New in Metric-Based Search?</h2>
+      <p>This updated search functionality brings several powerful features, including:</p>
+      <ul>
+        <li>Ability to use metrics and properties associated with object types in search queries.</li>
+        <li>Support for adding conditions using multiple metrics.</li>
+        <li>Auto-completion of search syntax to simplify query creation.</li>
+        <li>Automatic syntax validation during searches.</li>
+        <li>Launch of the Troubleshooting Workbench directly from search results.</li>
+        <li>Options to save screen or chart snapshots as PDFs for further analysis or sharing.</li>
+        <li>Filters to narrow down search results and roll-ups for data aggregation.</li>
+      </ul>
+      <p>Excited? Let’s dive into how you can use this feature effectively!</p>
+
+      <h2>How to Perform a Simple Metric-Based Search</h2>
+      <p>Follow these steps for a basic search:</p>
+      <ol>
+        <li>Click on the search bar at the top of VMware Aria Operations and select the new <strong>Metric</strong> option.</li>
+        <li>Use the auto-complete suggestions to build your query. VMware Aria Operations will validate the syntax and suggest next steps.</li>
+        <li>Narrow your results by adjusting query options or using the <strong>Child Of</strong> filter to reduce the scope of your search.</li>
+      </ol>
+      <img src="images/image-1.jpg" alt="Simple Metric-Based Search" style="max-width: 100%; height: auto;">
+
+      <p>You can start with:</p>
+      <ul>
+        <li>A specific metric:</li>
+        <img src="images/image-3.jpg" alt="Starting with a Metric" style="max-width: 100%; height: auto;">
+        <li>An object type:</li>
+        <img src="images/image-4.jpg" alt="Starting with an Object Type" style="max-width: 100%; height: auto;">
+      </ul>
+
+      <h2>Advanced Metric-Based Search</h2>
+      <p>For more complex queries, you can:</p>
+      <ol>
+        <li>Start with a metric or object type, just like a simple query.</li>
+        <li>Define conditions using operators like <strong>AND</strong> or <strong>OR</strong>. For example, search for CPU usage greater than 50% or memory usage greater than 70%.</li>
+        <li>Toggle between metrics on the search results page or filter the results further using roll-ups and metric value ranges.</li>
+        <li>Navigate to the <strong>Troubleshooting Workbench</strong> from a metric chart to perform deeper analysis.</li>
+      </ol>
+      <img src="images/image-5.jpg" alt="Advanced Metric-Based Search" style="max-width: 100%; height: auto;">
+
+      <h3>Using Roll-Ups</h3>
+      <p>Roll-ups allow you to aggregate and narrow your results further:</p>
+      <img src="images/image-6.jpg" alt="Roll-Ups in Metric-Based Search" style="max-width: 100%; height: auto;">
+
+      <h3>Using Transformations</h3>
+      <p>Transformations enable advanced data manipulation but are resource-intensive. Keep in mind:</p>
+      <ul>
+        <li>Transformations are available for up to 200 objects and up to 30 days of data.</li>
+        <li>If the option is unavailable, it may be due to exceeding these thresholds. Use filters or the <strong>Child Of</strong> option to narrow the results.</li>
+      </ul>
+      <img src="images/image-8.jpg" alt="Transformations in Metric-Based Search" style="max-width: 100%; height: auto;">
+
+      <h2>Search Results and Functionality</h2>
+      <p>The search results page provides extensive options for data exploration:</p>
+      <ul>
+        <li>Display data by parent objects, clusters, or hosts.</li>
+        <li>Toggle, filter, or aggregate metrics for better insights.</li>
+        <li>Drill down to individual objects or navigate to the Troubleshooting Workbench for deeper analysis.</li>
+      </ul>
+      <img src="images/image-9.jpg" alt="Search Results Details" style="max-width: 100%; height: auto;">
+
+      <h2>Key Benefits of the Enhanced Search</h2>
+      <p>With this release, previously hidden functionalities like roll-ups and transformations are now accessible to all users, regardless of their familiarity with dashboards, views, or reports. The intuitive interface ensures that users can leverage these powerful features without needing advanced configuration knowledge.</p>
+
+      <h2>What’s Next?</h2>
+      <p>This feature is expected to evolve further in future VMware Aria Operations releases, offering greater flexibility and functionality. We encourage you to explore this feature and share your feedback to help shape its development. For more information, check the <a href="https://techzone.vmware.com" target="_blank">official documentation</a> and <a href="https://hands-on-labs.vmware.com" target="_blank">Hands-on Labs</a>.</p>
+    </section>
+  </article>
+</main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Follow us on:</p>
+    <ul class="social-links">
+      <li><a href="https://x.com/possible_pi" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/pipossible" target="_blank">Instagram</a></li>
+      <li><a href="#" target="_blank">LinkedIn</a></li>
+    </ul>
+    <p>&copy; 2025 PiPossible - All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
