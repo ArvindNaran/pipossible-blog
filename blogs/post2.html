@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="In this guide, we’ll walk through the steps to configure <strong>vSphere</strong> to redirect logs to...">
+  <title>How to Configure vSphere Logs to Redirect to vRealize Log Insight - PiPossible</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>PiPossible</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Blog Post Content -->
+  <main class="blog-post">
+  <article>
+    <header class="post-header">
+      <h1>How to Configure vSphere Logs to Redirect to vRealize Log Insight</h1>
+      <p class="meta">By <strong>Santha Vignesh</strong> | Published: November 23, 2025</p>
+    </header>
+    <section class="post-content">
+      <p>In this guide, we’ll walk through the steps to configure <strong>vSphere</strong> to redirect logs to <strong>vRealize Log Insight</strong>. This process allows you to centralize logs and monitor your VMware infrastructure effectively.</p>
+
+      <h2>Accessing the vRealize Log Insight Web Interface</h2>
+      <p>Start by navigating to the web user interface of <strong>vRealize Log Insight</strong>. Use the following URL:</p>
+      <p>
+        <code>https://log_insight-host/</code>
+      </p>
+      <p>Here, <code>log_insight-host</code> is the IP address or hostname of your vRealize Log Insight virtual appliance.</p>
+
+      <img src="images/image-1.jpg" alt="vRealize Log Insight Web Interface" style="max-width: 100%; height: auto;">
+
+      <h2>Configure vSphere Integration</h2>
+      <p>Once logged in, navigate to the <strong>Administration</strong> tab. On the <strong>vSphere Integration</strong> page, you can configure vRealize Log Insight to:</p>
+      <ul>
+        <li>Pull tasks, events, and alerts from <strong>vCenter Server</strong> instances.</li>
+        <li>Set up <strong>ESXi hosts</strong> to send syslog feeds to vRealize Log Insight.</li>
+      </ul>
+
+      <p>Provide the necessary information to collect events from vCenter Server and logs from ESXi hosts. After entering the details, use the <strong>Test Connection</strong> button to verify your inputs.</p>
+
+      <img src="images/image-2.jpg" alt="vSphere Integration Configuration" style="max-width: 100%; height: auto;">
+
+      <h2>Data Collection Options</h2>
+      <p>The following options can be configured during the integration:</p>
+      <ul>
+        <li><strong>vCenter Server Events, Tasks, and Alarms:</strong> These will be sent to Log Insight using the Log Insight agent included in the vSphere Content Pack.</li>
+        <li><strong>ESXi Host Logs:</strong> Configure ESXi hosts to send their logs to Log Insight via syslog. Note that existing syslog targets on the hosts will not be removed during this process.</li>
+      </ul>
+
+      <p>After providing the required inputs, accept the default certificate and click <strong>Save</strong>.</p>
+
+      <img src="images/image-3.jpg" alt="Accept Certificate and Save" style="max-width: 100%; height: auto;">
+
+      <h2>Verify Integration Success</h2>
+      <p>Once the configuration is complete, your vSphere environment will be successfully added. You’ll see confirmation on the interface.</p>
+
+      <img src="images/image-4.jpg" alt="Successful Integration Confirmation" style="max-width: 100%; height: auto;">
+
+      <h2>Accessing Logs in the Dashboard</h2>
+      <p>Navigate to the <strong>Dashboard</strong> tab, and from the right column, select <strong>VMware-vSphere</strong> to view your host event logs.</p>
+
+      <img src="images/image-5.jpg" alt="Dashboard Host Event Log" style="max-width: 100%; height: auto;">
+
+      <h2>Interactive Dashboard: Checking ESXi Logs</h2>
+      <p>You can use the <strong>Interactive Dashboard</strong> to analyze logs for specific ESXi hosts:</p>
+      <ol>
+        <li>Navigate to the <strong>Interactive Dashboard</strong>.</li>
+        <li>From the dropdown menu, select <strong>Hostname</strong>.</li>
+        <li>Enter the desired ESXi host name and press <strong>Enter</strong>.</li>
+      </ol>
+      <p>The latest logs for the specified host will be displayed on the screen.</p>
+
+      <img src="images/image-6.jpg" alt="Interactive Dashboard ESXi Logs" style="max-width: 100%; height: auto;">
+
+      <h2>What’s Next?</h2>
+      <p>We hope this guide helps you configure vSphere to redirect logs to vRealize Log Insight. Stay tuned for our next post, where we’ll show you how to set up log collection for Windows servers and clients.</p>
+    </section>
+  </article>
+</main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Follow us on:</p>
+    <ul class="social-links">
+      <li><a href="https://x.com/possible_pi" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/pipossible" target="_blank">Instagram</a></li>
+      <li><a href="#" target="_blank">LinkedIn</a></li>
+    </ul>
+    <p>&copy; 2025 PiPossible - All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
